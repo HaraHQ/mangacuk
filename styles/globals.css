@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -15,12 +19,46 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
     color: white;
     background: black;
+  }
+} */
+
+.navbar-enter {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+.navbar-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.navbar-exit {
+  opacity: 1;
+}
+.navbar-exit-active {
+  opacity: 0;
+  transform: translateY(-50px);
+
+  transition: opacity 300ms, transform 300ms;
+}
+
+.bounce-sm {
+  animation: bounceSm 1s infinite;
+}
+
+@keyframes bounceSm {
+  0%, 100% {
+    transform: translateY(-2%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 1.0, 1);
   }
 }
