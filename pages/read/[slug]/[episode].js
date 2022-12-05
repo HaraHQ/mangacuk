@@ -75,7 +75,7 @@ const SlugRead = () => {
           </div>
         </div>
         <div className='mb-16'>
-          <div className='mx-64 mt-8 mx-auto shadow-md'>
+          <div className='mx-64 mt-8 shadow-md'>
             <div className='relative w-full'>
               <Image
                 src={'/demo/1.jpg'}

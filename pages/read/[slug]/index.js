@@ -63,7 +63,7 @@ const Slug = () => {
       <main  className="">
         <Navbar readData={show ? read : false} />
         <Search />
-        <div className='mx-64 pb-64 mt-8 mx-auto shadow-inner'>
+        <div className='mx-64 pb-64 mt-8 shadow-inner'>
           <div>
             <div className='relative h-[340px] bg-gradient-to-r from-red-500 to-pink-500 shadow-lg'>
               <div className='absolute bottom-0 left-0 mb-4'>
