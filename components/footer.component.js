@@ -8,12 +8,14 @@ const Footer = () => {
       <div className="py-6 px-32 grid grid-cols-4 gap-6">
         <div></div>
         <div className="flex flex-col items-center">
-          <Image
-            src={"/logo.png"}
-            alt="MangaCUK"
-            width={64}
-            height={64}
-          />
+          <Link href="/">
+            <Image
+              src={"/logo.png"}
+              alt="MangaCUK"
+              width={64}
+              height={64}
+            />
+          </Link>
           <div className="text-sm">©️ 2022 Mangacuk</div>
         </div>
         <div className="flex flex-col">

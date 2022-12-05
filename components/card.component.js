@@ -23,8 +23,8 @@ const CardImage = ({ src, id }) => {
       <div className={(bounce && loaded ? `bounce-sm` : ``)}>
         <div className="relative">
           {loaded ? (
-            <div className="absolute bg-blue-500 text-white right-0 text-xs p-1">
-              NEW ✅
+            <div className="absolute bg-red-500 text-white right-0 text-xs p-1">
+              UPDATED ✅
             </div>
           ) : false}
           <Image
